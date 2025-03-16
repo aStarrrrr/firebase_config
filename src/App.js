@@ -37,7 +37,7 @@ function App() {
 
   // Delete Data
   const deleteData = (docId) => {
-    deleteDoc(doc(db, "products", docId))
+    deleteDoc(doc(db, "users", docId))
     .then(() => {
       console.log(`Document with ID ${docId} deleted successfully.`);
     })
@@ -52,7 +52,7 @@ function App() {
       <button onClick={fetchData}>Get</button>
       <button onClick={writeData}>Add</button>
       <button onClick={() => updateData("49fcp3qdNpohsTeuNZpu")}>Update Product</button>
-      <button onClick={() => deleteData("your_document_id_here")}>Delete Product</button>
+      <button onClick={() => deleteData("t5lPgTifwcFgNotxuwEP")}>Delete Product</button>
     </div>
   );
 }
